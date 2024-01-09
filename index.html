@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maple County Archive</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <headerplace>
+        <img src="src/1.png" alt="Logo">
+    </headerplace>
+
+    <header id="header">
+        <img src="src/1.png" alt="Logo" onclick="delayedAction()">
+    </header>
+
+    <navbar id="nav">
+        <left>
+            <p id="navbarText">Welcome back,</p>
+            <p id="navbarText">-Adam-</p>
+        </left>
+        <right>
+            <p1 id="navbarText1">There is no</p1>
+            <p id="navbarText" onclick="confirmExit()">Exit</p>
+        </right>
+        
+    </navbar>
+
+    <main id="main">
+        <catalog id="cat">
+            <profile>
+                <img src="src/head.png">
+            </profile>
+            <logs>
+            <log>
+                <img src="src/3.png">
+                <p>Personal Files</p>
+            </log>
+            <log>
+                <img src="src/3.png">
+                <p>Archive Collection</p>
+            </log>
+            <log>
+                <img src="src/3.png">
+                <p>Log Updates</p>
+            </log>
+            <log>
+                <img src="src/3.png">
+                <p>Settings</p>
+            </log>
+            <log>
+                <img src="src/3.png">
+                <p>HELP</p>
+            </log>
+            </logs>
+            <sign>
+                <img src="src/sign.png">
+            </sign>
+        </catalog>
+
+        <container >
+            <section1 id="conta1">
+                <div class="top-block">
+                    <h2 class="h2">Latest Report</h2>
+                </div>
+                <div class="bottom-block">
+                    <div class="image-gallery">
+                        <div class="slider">
+                            <img id="slide1" src="src/a.png" alt="Image 1">
+                            <img id="slide2" src="src/b.png" alt="Image 2">
+                            <img id="slide3" src="src/c.png" alt="Image 3">
+                        </div>
+                        <div class="slider-nav">
+                            <a href="#slide1"></a>
+                            <a href="#slide2"></a>
+                            <a href="#slide3"></a>
+                        </div>
+                    </div>
+                </div>
+            </section1>
+            
+
+            <section id="conta4">
+                <h2 class="h2">Daily</h2>
+                <ul>
+                    <div class="line">As a shepherd looks after his scattered flock when he is with them</div>
+                    <div class="line">so will I look after my sheep</div>
+                    <div class="line">I will rescue them from all the places where they were scattered on a day of clouds and darkness</div>
+                </ul>
+            </section>
+            
+            <section id="conta2">
+                <div class="top-block2">
+                    <h2 class="h2">Close Up</h2>
+                </div>
+                <div class="bottom-block2">
+                    <div class="text-section">
+                        <p class="pp">Primarily set during the early 1990s and late 2000s, The Mandela Catalogue takes place within the fictional Mandela County, located in Wisconsin, which is terrorized by the presence of shape-shifting creatures named "alternates". Alternates, led by a depiction of the archangel Gabriel, are nearly-immortal beings that aim to eradicate humanity by psychologically torturing them to the point of suicide (identified in-universe as M.A.D. or Metaphysical Awareness Disorder) or by manipulating audiovisual media, such as televisions, personal computers, and even vehicle GPS systems.</p>
+                        <p class="pp">The series contains many biblical allusions, including Noah's Ark, Adam and Eve, Mary and Joseph, and the birth of Jesus. It is heavily implied that the alternates are in actuality biblical demons, and that Gabriel is actually Satan in disguise.  The Mandela Catalogue is composed of 8 shorts and 4 volumes across two "Acts", the first short of which was released on June 9, 2021. It is a subgenre of horror dubbed analog horror.Its installments are usually presented as found footage material, or from the point of view of in-universe characters and/or their electronic devices. </p>
+                        <p class="pp">Nearly all of the Act I installments are rendered in a VHS aesthetic, whereas most Act II installments are made in the style of old digital videos, reflecting the shift in the time period depicted.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            
+
+            <section id="conta3">
+                <h2 class="h2">Notes</h2>
+                <div class="glitch-wrapper" >
+                    <div class="glitch" data-text="THERE IS NOTHING WORTH THE RISK" id="gil">THERE IS NOTHING WORTH THE RISK</div>
+                 </div>
+            </section>
+        </container>
+    </main>
+
+    <footer id="footer">
+        <p>THERE IS NOTHING WORTH THE RISK</p>
+    </footer>
+
+    <script>
+        function delayedAction() {
+            var navbarTextElement = document.getElementById('navbarText1');
+            var mainElement = document.getElementById('main');
+            var headerElement = document.getElementById('header')
+            var footerElement = document.getElementById('footer')
+            var headerElement = document.getElementById('header')
+            var headerElement = document.getElementById('header')
+            var navElement = document.getElementById('nav')
+            var catElement = document.getElementById('cat')
+            var gilElement = document.getElementById('gil')
+            var contaElement1 = document.getElementById('conta1')
+            var contaElement2 = document.getElementById('conta2')
+            var contaElement3 = document.getElementById('conta3')
+            var contaElement4 = document.getElementById('conta4')
+            var contaElement4 = document.getElementById('conta4')
+            var h2Elements = document.querySelectorAll('h2');
+            var ppElements = document.querySelectorAll('.pp');
+            var lineElements = document.querySelectorAll('.line');
+            
+    
+            setTimeout(function() {
+                
+                navbarTextElement.style.color = '#cd2121';
+                mainElement.style.backgroundColor = '#cd2121';
+                headerElement.style.backgroundColor = '#242424';
+                footerElement.style.backgroundColor = '#242424';
+                navElement.style.backgroundColor = '#242424';
+                catElement.style.backgroundColor = '#242424';
+                gilElement.style.opacity = 1.0
+                contaElement1.style.backgroundColor = '#242424';
+                contaElement2.style.backgroundColor = '#242424';
+                contaElement3.style.backgroundColor = '#242424';
+                contaElement4.style.backgroundColor = '#242424';
+                h2Elements.forEach(function(h2) {
+                    h2.style.color = '#ffffff'; 
+                });
+                ppElements.forEach(function(pp) {
+                    pp.style.color = '#ffffff'; 
+                });
+                lineElements.forEach(function (line) {
+                    line.style.color = '#ffffff';  
+                });
+            }, 1000);
+        }
+
+        function confirmExit() {
+        var isConfirmed = confirm("Are you sure you want to exit?");
+        if (isConfirmed) {
+            alert("You will be back.");
+            window.close(); 
+        }
+    }
+    </script>
+</body>
+</html>
